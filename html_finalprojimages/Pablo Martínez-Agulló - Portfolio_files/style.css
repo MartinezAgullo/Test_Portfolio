@@ -192,24 +192,26 @@ h2 {
 
 .all_recommendations {
   display: flex;
-  justify-content: flex-start; /* Align items to the start of the flex container */
-  flex-wrap: wrap; /* Allow the items to wrap */
-  gap: 20px; /* This creates space between the items and rows */
-  padding-left: 1in; /* This will apply to the entire container, aligning all items inside */
+  align-items: center;
+  margin-left: 1in;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding: 20px;
 }
 
 .recommendation {
   font-style: italic;
   text-align: left;
-  width: 21.875rem; /* Ensure this width allows for the text without breaking the layout */
+  width: 21.875rem;
   padding: 1rem;
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
-  margin-bottom: 20px; /* Ensure consistent spacing between rows */
-  border: 1px solid gray;
+  padding: 20px;
+  margin: 10px;
+  border:1px solid gray;
   font-size: 18px;
-  /* Removed the specific margin-left rule for the first child */
+  height:150px
 }
 
 .recommendation span {
@@ -219,7 +221,6 @@ h2 {
 }
 
 /* Scroll to Top Button */
-
 
 .iconbutton{
   width: 48px;
